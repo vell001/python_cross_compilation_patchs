@@ -1,8 +1,7 @@
-
-diff --git a/packages/Python-2.7.5/Makefile.pre.in b/packages/Python-2.7.5/Makefile.pre.in
+diff --git Python-2.7.5/Makefile.pre.in Python-2.7.5/Makefile.pre.in
 index 9d55550..b028235 100644
---- a/packages/Python-2.7.5/Makefile.pre.in
-+++ b/packages/Python-2.7.5/Makefile.pre.in
+--- Python-2.7.5/Makefile.pre.in
++++ Python-2.7.5/Makefile.pre.in
 @@ -227,6 +227,7 @@ LIBFFI_INCLUDEDIR=	@LIBFFI_INCLUDEDIR@
  ##########################################################################
  # Parser
@@ -64,10 +63,10 @@ index 9d55550..b028235 100644
  	-rm $(DESTDIR)$(DESTSHARED)/_sysconfigdata.py*
  
  # Here are a couple of targets for MacOSX again, to install a full
-diff --git a/packages/Python-2.7.5/Modules/Setup.dist b/packages/Python-2.7.5/Modules/Setup.dist
+diff --git Python-2.7.5/Modules/Setup.dist Python-2.7.5/Modules/Setup.dist
 index 2ad1aa3..ede793f 100644
---- a/packages/Python-2.7.5/Modules/Setup.dist
-+++ b/packages/Python-2.7.5/Modules/Setup.dist
+--- Python-2.7.5/Modules/Setup.dist
++++ Python-2.7.5/Modules/Setup.dist
 @@ -163,7 +163,7 @@ GLHACK=-Dclear=__GLclear
  # it, depending on your system -- see the GNU readline instructions.
  # It's okay for this to be a shared library, too.
@@ -101,10 +100,10 @@ index 2ad1aa3..ede793f 100644
  
  # Interface to the Expat XML parser
  #
-diff --git a/packages/Python-2.7.5/configure b/packages/Python-2.7.5/configure
+diff --git Python-2.7.5/configure Python-2.7.5/configure
 index dc0dfd0..083ef1b 100755
---- a/packages/Python-2.7.5/configure
-+++ b/packages/Python-2.7.5/configure
+--- Python-2.7.5/configure
++++ Python-2.7.5/configure
 @@ -2849,24 +2849,11 @@ case $host_os in *\ *) host_os=`echo "$host_os" | sed 's/ /-/g'`;; esac
  
  
@@ -132,10 +131,10 @@ index dc0dfd0..083ef1b 100755
  elif test "$cross_compiling" = maybe; then
      as_fn_error $? "Cross compiling required --host=HOST-TUPLE and --build=ARCH" "$LINENO" 5
  else
-diff --git a/packages/Python-2.7.5/setup.py b/packages/Python-2.7.5/setup.py
+diff --git Python-2.7.5/setup.py Python-2.7.5/setup.py
 index 716f08e..ca8b141 100644
---- a/packages/Python-2.7.5/setup.py
-+++ b/packages/Python-2.7.5/setup.py
+--- Python-2.7.5/setup.py
++++ Python-2.7.5/setup.py
 @@ -17,7 +17,7 @@ from distutils.command.install import install
  from distutils.command.install_lib import install_lib
  from distutils.spawn import find_executable
